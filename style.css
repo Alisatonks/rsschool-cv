@@ -1,9 +1,3 @@
-@font-face {
-    font-family: JosefinSansRegular;
-     src: url("assets/fonts/JosefinSansRegular.ttf");
-    
-   }
-
  body {
     font-family: "JosefinSansRegular";
     min-height: 100vh;
