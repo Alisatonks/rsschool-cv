@@ -1,0 +1,225 @@
+@font-face {
+    font-family: JosefinSansRegular;
+     src: url("assets/fonts/JosefinSansRegular.ttf");
+    
+   }
+
+ body {
+    font-family: "JosefinSansRegular";
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+
+ * {
+    box-sizing: border-box;
+ }
+ .header {
+    background-color: #8a91b5;
+ }
+ .main {
+ }
+ .footer {
+  background-color: #8a91b5;
+  height: 50px;
+ }
+ .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+  .nav-list {
+    list-style: none;
+  }
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    position: relative;
+  }
+
+  .nav-link:before {
+    content:'';
+    left: 0;
+    bottom: -5px;
+    position:absolute;
+    width:0;
+    height: 2px;
+    background-color: white;
+    transition: 0.5s;
+  }
+
+  .nav-link:hover:before {
+    width: 100%;
+  }
+ .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7fae3;
+ }
+
+ .section {
+    width: 47%;
+    font-size: 20px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    border-bottom: 1px solid #202487;
+    margin: 20px;
+ }
+
+ @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+  .section-profile {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 20px;
+    border-bottom: 1px solid #202487;
+    border-top: 1px solid #202487;
+    border-left: 1px solid #202487;
+    border-right: 1px solid #202487;
+    background-color: #edeefa;
+  }
+
+.photo {
+   width: 179.2px;
+   height: 238.4px;
+}
+
+  .section-profile-title {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+   text-transform: uppercase;
+}
+  
+
+  .section-title {
+    margin-bottom: 25px;  
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #202487;
+    text-align: center;
+  }
+  .main-title {
+    color: #202487;
+    font-size: 38px;
+    letter-spacing: 5px;
+    line-height: 50px;
+    word-spacing: 5px;
+  }
+
+  .contact-list {
+   list-style: none;
+  }
+  .contact-list1 {
+   background: url(assets/github.png) no-repeat;
+   padding-left: 30px;
+  }
+  .contact-list2 {
+   background: url(assets/phone.png) no-repeat;
+   padding-left: 30px;
+  }
+  .contact-list3 {
+   background: url(assets/mail.png) no-repeat;
+   padding-left: 30px;
+  }
+
+  .email {
+    color: #24319e;
+  }
+
+  .contact-list4 {
+   background: url(assets/address.png) no-repeat;
+   padding-left: 30px;
+  }
+  .contact-link {
+   text-decoration: none;
+   position: relative;
+   color: #24319e;
+  }
+
+  .contact-link:before {
+    content:'';
+    left: 0;
+    bottom: -5px;
+    position:absolute;
+    width:0;
+    height: 1px;
+    background-color: #24319e;
+    transition: 0.5s;
+  }
+
+  .contact-link:hover:before {
+    width: 100%;
+  }
+
+  figure {
+    height: 150px;
+    width: 90%;
+    background-color: black;
+  }
+
+  .codewhite {
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .code {
+    color: #128c51;
+  }
+  
+  .code2 {
+  color: #e4f714;
+  }
+
+.section-languages {
+  border-bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+
+.link-footer {
+  color: white;
+  font-size: 20px;
+  padding: 0px; 50px;
+  text-decoration: none;
+  line-height: 50px;
+}
+.RSlogo {
+  width: 121px;
+  height: 45px;
+  background-image: url(assets/rs-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.list-skills {
+  list-style-type: "\1F44D"; // thumbs up sign;
+  padding-left: 15px;
+}
+
